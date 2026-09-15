@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anime Explorer</title>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <nav class="nav-var">
+
+        <h1>Anime Explorer</h1>
+
+        <div class="navv">
+
+            <!-- Home button -->
+            <a href="#" id="homeLink">
+                Home
+            </a>
+
+            <a href="#animeSection">
+                Discover
+            </a>
+
+
+            <a href="#" id="favoritesLink">
+                Favorites
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+
+    <section class="hero">
+
+        <h2>
+            Discover Your Next Anime
+        </h2>
+
+        <p>
+            Explore amazing anime and find your next
+            favorite series.
+        </p>
+
+
+        <!-- ================= SEARCH ================= -->
+
+        <div class="search-box">
+
+            <input id="searchInput" type="search" placeholder="Search anime....">
+
+            <button id="searchButton" type="button">
+                Search
+            </button>
+
+        </div>
+
+
+
+
+        <div class="sort-box">
+
+            <label for="sortSelect">
+                Sort by:
+            </label>
+
+            <select id="sortSelect">
+
+                <option value="default">
+                    Default
+                </option>
+
+                <option value="az">
+                    Name: A–Z
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+
+        <div class="filter-box">
+
+            <label for="genreSelect">
+                Genre:
+            </label>
+
+            <select id="genreSelect">
+
+                <option value="all">
+                    All Genres
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="anime-section" id="animeSection">
+
+        <h1 id="sectionTitle">
+            Popular Anime
+        </h1>
+
+
+
+        <p id="loading">
+            Loading anime...
+        </p>
+
+
+    
+
+        <div class="anime-container"></div>
+
+
+       
+        <button id="loadMoreButton" type="button">
+            Load More
+        </button>
+
+    </section>
+
+
+
+
+    <div id="animeModal" class="modal">
+
+        <div class="modal-content">
+
+
+     
+
+            <button id="closeModal" class="close-modal" type="button">
+                ×
+            </button>
+
+
+
+            <div id="modalBody"></div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <footer>
+
+        <p>
+            Anime Explorer • Discover your next favorite anime
+        </p>
+
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
